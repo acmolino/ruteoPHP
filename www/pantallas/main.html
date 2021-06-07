@@ -1,0 +1,72 @@
+
+
+	<div id='myHeader' class="contenidoApp">
+		<!-- Boton de avrir y cerrar-->
+		<div class="barraMenu">
+		 	<span style="font-size:25px;cursor:pointer" onclick="openNav();">&#9776; Menú</span>
+		  	<span style="float: right;" ><img src="img/logo.png" width="40vw"></span>
+		</div>
+
+
+		<!--##############################################################################-->
+		<!-- #############################     Menú      #################################-->
+		<!--##############################################################################-->
+		<div id="mySidenav" class="sidenav">
+		  <a href="javascript:void(0)" class="closebtn" onclick="closeNav();">&times;</a>
+
+	
+		   <!-- Boton Clientes -->
+		  <div class="nav-item" data-toggle="collapse" data-target="#clientes" class="collapsed active">
+		      <a href="#"> Personas </a>
+		    <div class="sub-menu collapse" id="clientes">
+		        <a class="nav-link ruta" 
+		              href="pantallas/personasAlta.html" 
+		              onclick="closeNav(); return false;"
+		              >&emsp;<i class="fas fa-user-plus"></i>&nbsp;Ingresar</a>
+		        
+		        <a class="nav-link ruta" 
+		            href="pantallas/personasListado.html" 
+		            onclick="closeNav(); return false;"
+		            >&emsp;<i class="fas fa-address-card"></i>&nbsp;Listado</a>
+		    </div>
+		  </div>
+
+
+		  <a href="#">Otros</a>
+		  <a href="#">Configuracion</a>
+		  <a href="javascript:void(0)" onclick="cerrarSesion()">Cerrar sesion</a>
+
+		</div>
+
+	</div>
+
+
+
+
+	<div id="main" class="contenidoApp">	
+
+		<div class="container-fluid" id="contenido">
+
+			<!-- CONTENIDO PRINCIPAL -->
+			<div class="card">
+			  <div class="card-header">
+			    Datos principales
+			  </div>
+			  <ul class="list-group list-group-flush">
+			    <li class="list-group-item">Pruebas 1</li>
+			    <li class="list-group-item">Pruebas 2</li>
+			    <li class="list-group-item">Pruebas 3</li>
+			  </ul>
+			</div>
+
+		</div>
+	</div>
+
+	 <div class="footer">
+        <span>Pie de pagina</span>
+    </div>
+
+
+<script src="js/config.js"></script>
+<script src="js/menu.js"></script>
+	

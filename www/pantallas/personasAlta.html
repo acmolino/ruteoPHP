@@ -1,0 +1,19 @@
+<div id="clientesAlta">
+	<h1>Agregar Personas</h1>
+
+	<div class="form-group">
+	    <label for="txtNombreIngresar">Nombre</label>
+	    <input type="text" class="form-control" id="txtNombreIngresar">
+  	</div>
+  	<div class="form-group">
+	    <label for="txtApellidoIngresar">Apellido</label>
+	    <input type="text" class="form-control" id="txtApellidoIngresar">
+  	</div>
+
+  	<button class="btn btn-primary" 
+  			onclick="ingresarPersona($('#txtNombreIngresar').val(), $('#txtApellidoIngresar').val())">
+	Ingresar</button>
+</div>
+
+<script src="js/personas.js"></script>
+
